@@ -26,3 +26,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('listado', 'PersonaController@listado');
 Route::get('busqueda/{dni}','PersonaController@busqueda');
 
+
+

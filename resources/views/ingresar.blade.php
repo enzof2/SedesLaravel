@@ -18,6 +18,14 @@
   		<br>
   		<input type="int" name="dni">
   		<br>
+  		Telefono:
+  		<br>
+  		<input type="int" name="telf">
+  		<br>
+  		Fecha Nacimiento:
+  		<br>
+  		<input type="date" name="dni">
+  		<br>
   		<input type="submit" name="submit">
   		<a href="listado"><input type="button" value="Listado"></a>
 

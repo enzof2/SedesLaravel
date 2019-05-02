@@ -19,6 +19,8 @@ class CreatePersonasTable extends Migration
             $table->string('name');
             $table->string('lastname');
             $table->integer('dni');
+            $table->integer('telf');
+            $table->date('fechanac');
         });
     }
 
@@ -29,6 +31,6 @@ class CreatePersonasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_personas_');
+        Schema::dropIfExists('personas');
     }
 }

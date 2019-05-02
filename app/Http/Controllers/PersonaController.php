@@ -17,7 +17,9 @@ class PersonaController extends Controller
 		Persona::create(array(
 		'name'=> $request->name,
 		'lastname'=> $request->lastname,
-		'dni'=> $request->dni
+		'dni'=> $request->dni,
+		'telf'=> $request->telf,
+		'fechnac'=> $request->fechnac,
 		));
 	} 
 	function listado(request $request){

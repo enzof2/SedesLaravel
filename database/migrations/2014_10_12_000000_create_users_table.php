@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('perfil')->nullable();
             $table->rememberToken();
             $table->timestamps();
+            $table->string('rol');
         });
     }
 

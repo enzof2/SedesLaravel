@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Persona;
+use Redirect,Response,DB,Config;
+use Datatables;
 
 class PersonaController extends Controller
 {
@@ -22,12 +24,20 @@ class PersonaController extends Controller
 		'fechnac'=> $request->fechnac,
 		));
 	} 
+
+	function vistalista (){
+		return view('Persona.listado');
+	}
+
 	function listado(request $request){
 		$listado= Persona::all();
 		//dd($listado);
-		$aux='llego';
-		return view ('Persona.listado', compact('listado','aux'));
+		//$aux='llego';
+		//return view ('Persona.listado', compact('listado','aux'));
+        return datatables()->of($listado)
+            ->make(true);
 	}
+
 	function busqueda($busqdni){
 		$buscar=Persona::where('dni','=', $busqdni)->first();
 		return view ('Persona.busqueda', compact('buscar'));

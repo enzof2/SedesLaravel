@@ -13,7 +13,7 @@ class UsersTableSeeder extends Seeder
     {
     	 factory(App\User::create([
         	'name'=>'enzo fernandez',
-        	'email'=>'enzofernandez@gmail.com',
+        	'email'=>'a@gmail.com',
         	'email_verified_at' => now(),
         	'password'=> bcrypt('123'),
         	'remember_token' => Str::random(10),

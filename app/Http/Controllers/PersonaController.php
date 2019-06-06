@@ -30,7 +30,7 @@ class PersonaController extends Controller
 	}
 
 	function listado(request $request){
-		$listado= Persona::all();
+		
 		//dd($listado);
 		//$aux='llego';
 		//return view ('Persona.listado', compact('listado','aux'));
